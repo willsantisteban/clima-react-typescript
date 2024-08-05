@@ -32,7 +32,7 @@ const weatherZod = z.object({
         temp_min: z.number(),
     })
 });
-type weatherZod = z.infer<typeof Weather>
+type weatherZod = z.infer<typeof weatherZod>
 
 //Valibot
 // const weatherSchema = object({
