@@ -54,7 +54,7 @@ export const useWeatherStore = create<WeatherState>((set) => ({
 
         try{
             const { data } = await 
-                axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${search.city},${search.country}&appid=${API_KEY}`);
+                axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${search.city},${search.country}&appid=${API_KEY}`);
             if(data) {
                 const lat = data[0].lat;
                 const lon = data[0].lon;
